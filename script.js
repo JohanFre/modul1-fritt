@@ -36,21 +36,20 @@ console.log(location.hostname);
 //     .then((data) => (randomJoke.innerHTML = data.value.joke));
 // });
  */
+
 // Plan B då fetchen ovan inte fungerar på Github.
 jokeBtnEl.addEventListener("click", () => {
-  alert(
-    "Fetchen fungerar men inte på github verkar det som. Så tyvärr får du inget skämt."
-  );
+  alert("Fetchen fungerar men inte på github");
 });
 
 // Creates listitems from fruit array.
-let ul = document.createElement("ul");
-document.querySelectorAll(".all-the-fruits")[0].appendChild(ul);
+let ulEl = document.createElement("ul");
+document.querySelectorAll(".all-the-fruits")[0].appendChild(ulEl);
 
-for (var i = 0; i < fruitsEl.length; i++) {
-  let li = document.createElement("li");
-  li.innerHTML = fruitsEl[i];
-  ul.appendChild(li);
+for (let i = 0; i < fruitsEl.length; i++) {
+  let liEl = document.createElement("li");
+  liEl.innerHTML = fruitsEl[i];
+  ulEl.appendChild(liEl);
 }
 
 // Event listener for fruit filterbutton / console logs short named fruits.
