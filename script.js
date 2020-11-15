@@ -30,10 +30,17 @@ console.log(location.pathname);
 console.log(location.hostname);
 
 // Event listener for fetching jokeAPI and displaying the joke.
+// jokeBtnEl.addEventListener("click", () => {
+//   fetch(jokeUrl)
+//     .then((response) => response.json())
+//     .then((data) => (randomJoke.innerHTML = data.value.joke));
+// });
+
+// Plan B då fetchen ovan inte fungerar på Github.
 jokeBtnEl.addEventListener("click", () => {
-  fetch(jokeUrl)
-    .then((response) => response.json())
-    .then((data) => (randomJoke.innerHTML = data.value.joke));
+  alert(
+    "Fetchen fungerar men inte på github verkar det som. Så tyvärr får du inget skämt."
+  );
 });
 
 // Creates listitems from fruit array.
@@ -51,3 +58,9 @@ sortFruitsEl.addEventListener("click", () => {
   let filterEl = fruitsEl.filter((word) => word.length <= 4);
   console.log(filterEl);
 });
+
+// Function for simple math equation.
+function multiply(a, b) {
+  return a * b;
+}
+console.log(multiply(5, 10));
