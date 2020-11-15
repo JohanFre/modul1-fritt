@@ -4,7 +4,7 @@ const jokeBtnEl = document.querySelector(".getRandomJoke");
 const randomJoke = document.querySelector(".randomJoke");
 const fruitListEl = document.querySelectorAll(".all-the-fruits");
 const sortFruitsEl = document.querySelector(".sortFruits");
-const jokeUrl = "http://api.icndb.com/jokes/random";
+// const jokeUrl = "http://api.icndb.com/jokes/random";
 const fruitsEl = [
   "Banana",
   "Pineapple",
@@ -44,7 +44,7 @@ jokeBtnEl.addEventListener("click", () => {
 });
 
 // Creates listitems from fruit array.
-var ul = document.createElement("ul");
+let ul = document.createElement("ul");
 document.querySelectorAll(".all-the-fruits")[0].appendChild(ul);
 
 for (var i = 0; i < fruitsEl.length; i++) {
