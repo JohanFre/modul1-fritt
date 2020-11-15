@@ -29,13 +29,13 @@ console.log(location.origin);
 console.log(location.pathname);
 console.log(location.hostname);
 
-// Event listener for fetching jokeAPI and displaying the joke.
+/* // Event listener for fetching jokeAPI and displaying the joke.
 // jokeBtnEl.addEventListener("click", () => {
 //   fetch(jokeUrl)
 //     .then((response) => response.json())
 //     .then((data) => (randomJoke.innerHTML = data.value.joke));
 // });
-
+ */
 // Plan B då fetchen ovan inte fungerar på Github.
 jokeBtnEl.addEventListener("click", () => {
   alert(
