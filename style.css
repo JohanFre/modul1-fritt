@@ -1,0 +1,44 @@
+body {
+  background-color: rgb(170, 244, 247);
+  text-align: center;
+  padding: 15px;
+}
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+  grid-auto-rows: minmax(100px, auto);
+}
+
+h1 {
+  grid-column: 1 / 4;
+  grid-row: 1 / 3;
+}
+
+ul {
+  list-style-type: none;
+  text-align: center;
+}
+
+.listEl {
+  background-color: rgb(56, 231, 243);
+}
+
+.footer {
+  grid-column: 2;
+  grid-row: 4;
+}
+
+.listEl {
+  grid-column: 1;
+  grid-row: 3;
+}
+
+.fruitList {
+  grid-column: 3;
+  grid-row: 3;
+}
+
+.all-the-fruits {
+  padding-right: 80px;
+}
